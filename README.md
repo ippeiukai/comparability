@@ -31,7 +31,7 @@ To use, you need to extend your class with ``ComparableBy`` module.
       attr_reader :a, :b, :c, :d, :e
             
       comparable_by :a,                              # order of a
-                    [:b, reverse: true],             # reverse order of a
+                    [:b, reverse: true],             # reverse order of b
                     [:c, nil: :first],               # order of c, ordered first if c is nil  
                     [:d, reverse: true, nil: :last]  # reverse order of d, ordered last if d is nil  
                     ->(_){ _.e.upcase },             # order of e, case-insensitive    
