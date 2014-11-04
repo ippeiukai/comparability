@@ -25,7 +25,7 @@ To use, you need to extend your class with ``ComparableBy`` module.
 
     require 'comparability'
     
-    class MyClass < Struct.new(:a, :b, :c, :d)
+    class MyClass
       extend ComparableBy
       
       attr_reader :a, :b, :c, :d, :e
